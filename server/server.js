@@ -102,7 +102,6 @@ async function notifyPaid(o) {
   await sendMsg(`Клиент нажал “Я оплатил”\nЗаказ #${o.id}\nСумма: ${o.total} ₽\nКлиент: ${o.customer_name||"-"}\nТелефон: ${o.phone||"-"}\n\nПроверь поступление/чек вручную.`);
 }
 
-app.listen(process.env.PORT || 3000, ()=>console.log("Server started"));
-const seed = require('./seed');
+import "./seed.js";
 
-seed();
+app.listen(process.env.PORT || 3000, () => console.log("Server started"));
