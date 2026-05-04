@@ -103,3 +103,6 @@ async function notifyPaid(o) {
 }
 
 app.listen(process.env.PORT || 3000, ()=>console.log("Server started"));
+const seed = require('./seed');
+
+seed();
