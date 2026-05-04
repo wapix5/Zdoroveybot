@@ -18,7 +18,7 @@ VALUES (?,?,?,?,?)
   ["БАД","Ресвератрол MANTRA 60 капсул",1000,2,"assets/resveratrol.jpg"],
   ["БАД","Куркумин плюс MANTRA 60 капсул",640,2,"assets/curcumin.jpg"],
 
-  ["БАД","Hepasky 60 таблеток",0,5,"assets/hepasky.jpg"],
+  ["БАД","Hepasky 60 таблеток",0,5,"https://zdoroveybot-1.onrender.com/assets/hepasky.jpg"],
   ["БАД","Hepcmed Tablets 60",0,5,"assets/hepcmed.jpg"],
   ["БАД","Geptava Uridine-200 60 таб",0,5,"assets/geptava.jpg"],
 
