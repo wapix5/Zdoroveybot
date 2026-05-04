@@ -104,3 +104,4 @@ async function notifyPaid(o) {
 }
 
 app.listen(process.env.PORT || 3000, () => console.log("Server started"));
+app.use("/assets", express.static("server/assets"));
