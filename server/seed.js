@@ -1,4 +1,4 @@
-import { db } from "./db.js";
+const db = require('./db');
 db.exec("DELETE FROM order_items; DELETE FROM orders; DELETE FROM products;");
 const insert = db.prepare("INSERT INTO products (category,name,price,qty,image) VALUES (?,?,?,?,?)");
 [
