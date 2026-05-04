@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { db } from "./db.js";
+import "./seed.js";
 dotenv.config();
 
 const app = express();
@@ -101,7 +102,5 @@ async function notifyNewOrder(o,c,d,u) {
 async function notifyPaid(o) {
   await sendMsg(`Клиент нажал “Я оплатил”\nЗаказ #${o.id}\nСумма: ${o.total} ₽\nКлиент: ${o.customer_name||"-"}\nТелефон: ${o.phone||"-"}\n\nПроверь поступление/чек вручную.`);
 }
-
-import "./seed.js";
 
 app.listen(process.env.PORT || 3000, () => console.log("Server started"));
